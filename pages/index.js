@@ -16,39 +16,37 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="" className={styles.card}>
+          <a href="/yoga" className={styles.card}>
             <h3>Yoga &rarr;</h3>
-            <p>lorem ipsum</p>
+            <p>Here you can seek guidence into different yoga poses to stay flexible with lifes challenges.</p>
           </a>
 
-          <a href="" className={styles.card}>
+          <a href="/excercise" className={styles.card}>
             <h3>Excercise &rarr;</h3>
-            <p>lorem ipsum</p>
+            <p>This will be a reference point to look into different workouts to stay fit and happy.</p>
           </a>
 
           <a
-            href=""
+            href="/meals"
             className={styles.card}
           >
             <h3>Meal Recipes &rarr;</h3>
-            <p>lorem ipsum</p>
+            <p>Flavor jam packed vegan and vegetarian recipes will be shared weekly as a tasty treat.</p>
           </a>
 
           <a
-            href=""
+            href="/motivation"
             className={styles.card}
           >
             <h3>Motivation &rarr;</h3>
-            <p>
-              lorem ipsum
-            </p>
+            <p>Not feeling pumped today? That's okay feel free to drop a blurb for some uplifting responses.</p>
           </a>
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href=""
+          href="https://www.antonioreyes.dev"
           target="_blank"
           rel="noopener noreferrer"
         >
