@@ -12,9 +12,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https:/antonioreyes.dev"> Namaste Lifestyle!</a>
+          Welcome to the <a href="https://www.antonioreyes.dev"> Namaste Lifestyle!</a>
         </h1>
-        
+
         <div className={styles.grid}>
           <a href="" className={styles.card}>
             <h3>Yoga &rarr;</h3>
