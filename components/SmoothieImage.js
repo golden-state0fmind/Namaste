@@ -4,10 +4,10 @@ import Image from 'next/image'
 const SmoothieImage = () =>{
     return (
         <Image
-        src="/assets/berrySmoothie.png"
+        src="/berrySmoothie.png"
         alt=""
         height={500}
-        width={500}
+        width={350}
         />
     )
 }
