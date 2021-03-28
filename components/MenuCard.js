@@ -15,6 +15,8 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
+import Image from 'next/image'
+import SmoothieImage from './SmoothieImage'
 
 const useStyles = makeStyles((theme) => ({
 root: {
@@ -63,11 +65,7 @@ return (
         title="Vibe So Hard Energy"
         subheader="March 24, 2021"
     />
-    <CardMedia
-        className={classes.media}
-        image=""
-        title="Energy Smoothie"
-    />
+    <SmoothieImage/>
     <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
         This impressive smoothie is one for the books as we dive into the flovors of this powerful smoothie that'll get you jump started for the day.
