@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
@@ -15,7 +14,6 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import Image from 'next/image'
 import SmoothieImage from './SmoothieImage'
 
 const useStyles = makeStyles((theme) => ({
@@ -68,7 +66,7 @@ return (
     <SmoothieImage/>
     <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-        This impressive smoothie is one for the books as we dive into the flovors of this powerful smoothie that'll get you jump started for the day.
+        This impressive smoothie is life changing as we dive into the flavors of this powerful smoothie that'll get you jump started for the day.
         </Typography>
     </CardContent>
     <CardActions disableSpacing>
