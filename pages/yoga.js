@@ -3,8 +3,8 @@ import Button from '@material-ui/core/Button'
 
 function About(){
     return(
-    <div className={styles.card} > 
-        <Button variant='contained' color='primary' href='/' > Home </Button> <br/>
+    <div className={styles.card}>
+        <Button variant='contained' color='primary' href='/' > Home </Button>
         Welcome to the yoga section
     </div>
     ) 
