@@ -6,8 +6,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Namaste</title>
-        {/* Brand Logo below in favicon*/}
-        <link rel="" href="" /> 
       </Head>
 
       <main className={styles.main}>
