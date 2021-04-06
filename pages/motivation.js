@@ -10,7 +10,7 @@ function Motivation(){
             Welcome to the motivaion page
         </div>
         <div className={styles.card}>
-        <Affirmations/> ☮️
+            <Affirmations/> ☮️
         </div>
     </>
     )
