@@ -1,7 +1,10 @@
+import React from 'react'
+//import {workouts} from './api/workouts'
 import styles from '../styles/Home.module.css'
 import Button from '@material-ui/core/Button'
 
-function Excercise(){
+function Excercise() {
+    
     return (
     <div className={ styles.card } >
         <Button variant='contained' color='primary' href='/' > Home </Button> <br/>
