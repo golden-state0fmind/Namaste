@@ -1,0 +1,7 @@
+.formContainer {
+  justify-content: center;
+  align-items: baseline;
+}
+.textArea {
+  display: flex;
+}
