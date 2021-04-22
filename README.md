@@ -1,4 +1,4 @@
-## Getting Started
+# Getting Started
 
 First, install dependencies then run the development server:
 
@@ -14,13 +14,19 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The motivation behind this website it spread positivity and promote well being.
 
-## ERD
+## Home Page
 
-TBD
+![mobileImage](assets/homePage.png)
 
-## Wireframes
+## Mobile Screenshots
 
-TBD
+### Leave a comment section
+
+![mobileImage](assets/mobileImage.jpeg)
+
+### Meal section
+
+![mobileImage](assets/mobileImage2.jpeg)
 
 ## Tech Stack
 
@@ -28,4 +34,5 @@ React, JavaScript, Next.js, Firebase, MaterialUI, Figma
 
 ## Future Development
 
+Compliments to unsplash for the photo of the smoothie.
 This will be an ongoing project to promote well-ness.
