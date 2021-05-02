@@ -1,7 +1,16 @@
-[{
-    "deadlift":"5 sets @ 15 reps @ 70% PR",
+[
+    {
+    "Deadlift":"5 sets @ 15 reps @ 70% PR",
     "Bent-Over Row":"5 sets @ 15 reps @ 70% PR",
     "Seated Row":"5 sets @ 15 reps @ 70% PR",
     "Lat Pull-Down":"5 sets @ 15 reps @ 70%PR",
     "Pull-Up":"Rep till failure"
-}]
+    },
+    {
+        "Bench Press":"5 sets @ 15 reps @ 70% PR",
+        "Dumbbell Bench Press":"5 sets @ 15 reps @ 70% PR",
+        "Incline Dumbbell Bench Press":"5 sets @ 15 reps @ 70% PR",
+        "Machine Chest Press":"5 sets @ 15 reps @ 70% PR",
+        "Chest Dip":"Rep till failure"
+    }
+]
