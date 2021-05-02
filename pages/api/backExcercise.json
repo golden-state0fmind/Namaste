@@ -12,5 +12,12 @@
         "Incline Dumbbell Bench Press":"5 sets @ 15 reps @ 70% PR",
         "Machine Chest Press":"5 sets @ 15 reps @ 70% PR",
         "Chest Dip":"Rep till failure"
+    },
+    {
+        "Backsquat":"5 sets @ 15 reps @ 70% PR",
+        "Deadlift":"5 sets @ 15 reps @ 70% PR",
+        "Reverse Lunges":"5 sets @ 10 reps per leg @ 70% PR",
+        "Calf Raises":"5 sets @ 15 reps @ 70% PR",
+        "Hip Thrusts":"Rep till failure"
     }
 ]
