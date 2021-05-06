@@ -23,8 +23,8 @@ export default function Home() {
               <p>Friendly reminders to be better than yesterday.</p>
             </a>
             {/* Excercise section */}
-            <a href="/excercise" className={styles.card}>
-              <h3>Excercise &rarr;</h3>
+            <a href="/exercise" className={styles.card}>
+              <h3>Exercise &rarr;</h3>
               <p>This will be a reference point to look into different workouts to stay fit and happy.</p>
             </a>
             {/* Meals section */}
