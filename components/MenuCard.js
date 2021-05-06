@@ -57,11 +57,10 @@ return (
         }
         action={
         <IconButton aria-label="settings">
-            <MoreVertIcon />
         </IconButton>
         }
-        title="Vibe So Hard Energy"
-        subheader="March 24, 2021"
+        title="Woke Energy Smoothie"
+        subheader=""
     />
     <SmoothieImage/>
     <CardContent>
@@ -71,10 +70,10 @@ return (
     </CardContent>
     <CardActions disableSpacing>
         <IconButton href="/" aria-label="add to favorites">
-        <FavoriteIcon />
+        {/* <FavoriteIcon /> */}
         </IconButton>
         <IconButton aria-label="share">
-        <ShareIcon />
+        {/* <ShareIcon /> */}
         </IconButton>
         <IconButton
         className={clsx(classes.expand, {
@@ -95,10 +94,6 @@ return (
         </Typography>
         <Typography paragraph>
         The blend of mixed berries will add a greater defense to free radicals in your body while the organic peanut butter will provide protein and monounsaturated fats for a healthy heart. Followed by the electrifying guarana seed powder offering similar health benefits of the green tea plant and bananas are a great source for nutrients, fiber and carbs making this smoothie great for your first meal intake. 
-        </Typography>
-        <Typography paragraph>
-        </Typography>
-        <Typography>
         </Typography>
         </CardContent>
     </Collapse>
