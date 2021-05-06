@@ -1,7 +1,7 @@
-import styles from '../styles/Home.module.css'
-import Button from '@material-ui/core/Button'
+import styles from '../styles/Home.module.css';
+import Button from '@material-ui/core/Button';
 import HomeIcon from '@material-ui/icons/Home';
-import CommentForm  from '../components/CommentForm'
+import CommentForm from '../components/CommentForm';
 
 function About(){
     return (
