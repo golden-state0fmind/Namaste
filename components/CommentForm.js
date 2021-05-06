@@ -3,8 +3,18 @@ import style from '../styles/CommentsForm.module.css'
 import Button from '@material-ui/core/Button'
 import SendSharpIcon from '@material-ui/icons/SendSharp';
 import { Typography } from '@material-ui/core';
+//import { db } from '../firebase';
 
 export default function CommentForm() {
+    // db.collection("Posts").add({
+    //     Comments:"testing the comments"
+    //         })
+    //             .then((docRef) => {
+    //                 console.log("Document successfully written: ", docRef.id);
+    // })
+    //             .catch((error) => {
+    //                 console.error("Error adding document: ", error);
+    // })
     return (
         <form className={style.formContainer}>
             <label>
