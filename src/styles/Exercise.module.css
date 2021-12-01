@@ -1,0 +1,42 @@
+.body {
+  background: url("../assets/weights.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.card {
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: #888281;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.card:hover,
+.card:focus,
+.card:active {
+  color: #eaeaea;
+  border-color: #991200;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
