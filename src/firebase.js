@@ -1,4 +1,3 @@
-require('dotenv').config();
 // Required for side-effects
 import firebase from 'firebase/app';
 import 'firebase/firestore';
