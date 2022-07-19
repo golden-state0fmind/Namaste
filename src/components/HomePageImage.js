@@ -1,6 +1,6 @@
-import Image from 'next/image'
-    
-const HomePageImage = () => {
+import Image from 'next/image';
+
+export default HomePageImage = () => {
     return (
         <Image
             layout="fill"
@@ -10,5 +10,3 @@ const HomePageImage = () => {
         />
     )
 }
-
-export default HomePageImage
