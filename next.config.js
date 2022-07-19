@@ -14,11 +14,11 @@ module.exports = {
         return config;
     },
     env: {
-        apiKey: process.env.api_Key,
-        authDomain: process.env.auth_Domain,
-        projectId: process.env.project_Id,
-        storageBucket: process.env.storage_Bucket,
-        messagingSenderId: process.env.messaging_SenderId,
-        appId: process.env.app_Id
+        REACT_APP_MY_KEY: process.env.REACT_APP_MY_KEY,
+        REACT_APP_MY_AUTH_DOMAIN: process.env.REACT_APP_MY_AUTH_DOMAIN,
+        REACT_APP_MY_PROJECT_ID: process.env.REACT_APP_MY_PROJECT_ID,
+        REACT_APP_MY_STORAGE_BUCKET: process.env.REACT_APP_MY_STORAGE_BUCKET,
+        REACT_APP_MY_MESSAGING_SENDERID: process.env.REACT_APP_MY_MESSAGING_SENDERID,
+        REACT_APP_MY_APP_ID: process.env.REACT_APP_MY_APP_ID
     }
 };
