@@ -1,0 +1,36 @@
+.testimony_card {
+    flex-basis: 20%;
+    padding: 1.5rem;
+    margin-top: 30px;
+    color: #36476F;
+    height: 200px;
+    border: 3px solid #36476F;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+.testimony_card:hover,
+.testimony_card:focus,
+.testimony_card:active {
+    color: #eaeaea;
+    border-color: #5576D1;
+}
+
+.testimony_card h4 {
+    font-size: 1.5rem;
+    color: #459ED5;
+    text-align: center;
+}
+
+.testimony_card p {
+    margin: 0;
+    color: #459ED5;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.25rem;
+}
+/* needs to host profile image and plugin loader for webpack plugin */
+.testimony_card > div > img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
