@@ -1,20 +1,15 @@
 import styles from '../styles/Home.module.css';
-import Button from '@material-ui/core/Button';
-import HomeIcon from '@material-ui/icons/Home';
-import CommentForm from '../components/CommentForm';
 
-function About(){
+
+export default function About() {
     return (
         <>
             <div className={styles.card}>
-                <Button variant='contained' color='primary' href='/' > Home <HomeIcon/></Button>
-                Share your experience
-            </div>
-            <div className={styles.card}>
-                <CommentForm/>
+                <div className={styles.card}>
+                    <h3>CARD &rarr;</h3>
+                    <p>Flavor jam packed vegan and vegetarian recipes will be shared weekly as a tasty treat.</p>
+                </div>
             </div>
         </>
-    ) 
-}
-
-export default About;
+    );
+};
