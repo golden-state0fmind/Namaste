@@ -1,13 +1,10 @@
-import React, {useEffect, useState} from 'react'
-import style from '../styles/CommentsForm.module.css'
-import Button from '@material-ui/core/Button'
-import SendSharpIcon from '@material-ui/icons/SendSharp';
-import { Typography } from '@material-ui/core';
+import React, { useEffect, useState } from 'react';
+import style from '../styles/CommentsForm.module.css';
 import { firestore } from '../firebase';
 
 export default function CommentForm() {
     const [comment, setComment] = useState(''); //state for the comment
-    
+
     function handleChange(e) {
         setComment(e.target.value);
     };
@@ -33,9 +30,6 @@ export default function CommentForm() {
     return (
         <form className={style.formContainer} onSubmit={handleSubmit}>
             <label>
-                <Typography variant="h6" >
-                    What effective recipes do you find useful in keeping a healthy balance in life?
-                </Typography>
                 <textarea
                     className={style.textArea}
                     comment='comment'
@@ -44,14 +38,7 @@ export default function CommentForm() {
                     onChange={handleChange}
                 />
             </label>
-            <Button
-                size="small"
-                variant='contained'
-                color='primary'
-                className={style.submitButton}
-                type='submit'
-            >Share my comment <SendSharpIcon />
-            </Button>
+            <button>Submit</button>
         </form>
     );
 };
