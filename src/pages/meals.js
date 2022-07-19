@@ -1,20 +1,15 @@
-import style from '../styles/Meals.module.css'
-import MenuCard from '../components/MenuCard'
-import Button from '@material-ui/core/Button'
-import HomeIcon from '@material-ui/icons/Home';
+import style from '../styles/Meals.module.css';
 
-function MealRecipes(){
+export default function MealRecipes() {
     return (
-    <div className={style.body}>
-        <div className={style.card}>
-            <Button variant='contained' color='primary' href='/' > Home <HomeIcon/></Button> <br/>
-            Welcome to the meal recipes for vegans and vegetarians
+        <div className={style.body}>
+            <div className={style.card}>
+                Welcome to the meal recipes for vegans and vegetarians
         </div>
-        <div className={style.container}>
-            <MenuCard/>
+            <div className={style.card}>
+                <h3>CARD &rarr;</h3>
+                <p>Friendly reminders to be better than yesterday.</p>
+            </div>
         </div>
-    </div>
-    )
-}
-
-export default MealRecipes
+    );
+};
