@@ -4,7 +4,9 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head />
+                <Head>
+                    <meta name="description" content="Online presence for intorducing new healthy food recipes, effective excercises and positive messages."/>
+                </Head>
                 <body>
                     <Main />
                     <NextScript />

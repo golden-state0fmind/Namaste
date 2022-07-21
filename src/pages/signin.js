@@ -4,7 +4,7 @@ import { useAuth } from '../context/AuthContext';
 
 const Signin = () => {
     const router = useRouter()
-    const { user, signin } = useAuth()
+    const { signin } = useAuth()
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -12,7 +12,6 @@ const Signin = () => {
 
     const handleSignin = async (e) => {
         e.preventDefault()
-        console.log(user)
         try {
             await signin(data.email, data.password)
             router.push('/')

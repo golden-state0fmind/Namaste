@@ -14,12 +14,11 @@ export default function NavBar() {
             </div>
         )
     }
-    console.log('USER: ', user)
     return (
         <>
             <section className={styles.top_nav}>
                 <div className={styles.logo}>
-                    {user ? `Welcome ${user.email}` : 'NAMASTE'}
+                    {user ? `Welcome ${user.email}` : 'Recipes, blogs, and more inside'}
                 </div>
                 <input onClick={() => setMenuOpen(!menuOpen)} id={styles.menu_toggle} type="checkbox" />
                 <label className={styles.menu_button_container} htmlFor={styles.menu_toggle}>

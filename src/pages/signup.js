@@ -7,8 +7,7 @@ import AlertUser from '../components/utilities/AlertUser';
 const Signup = () => {
     const [alertUser, setAlertUser] = useState(false);
     const router = useRouter()
-    const { user, signup } = useAuth();
-    console.log(user)
+    const { signup } = useAuth();
     const [data, setData] = useState({
         email: '',
         password: '',
@@ -30,7 +29,6 @@ const Signup = () => {
             // invalid email
             alert('Insert Valid Email and Password must be longer than 6 characters')
         }
-        console.log(data)
     };
     const gotoSignin = () => router.push('/signin');
 
