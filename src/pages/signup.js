@@ -2,10 +2,11 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import { useAuth } from '../context/AuthContext';
-import AlertUser from '../components/utilities/AlertUser';
+import { AlertUser } from '../components/utilities/AlertUser';
 
 const Signup = () => {
-    const [alertUser, setAlertUser] = useState(false);
+    const alert = false;
+    const [err, setErr] = useState();
     const router = useRouter()
     const { signup } = useAuth();
     const [data, setData] = useState({
@@ -21,9 +22,8 @@ const Signup = () => {
                 await signup(data.email, data.password)
                 router.push('/')
             } catch (err) {
-                console.log(err)
                 //handle error for logging in
-                setAlertUser(true)
+                console.log(err)
             }
         } else {
             // invalid email
@@ -38,7 +38,7 @@ const Signup = () => {
                 <div className="row g-3 mx-1">
                     <h1 className="display-1">Sign up</h1>
                     <form onSubmit={handleSignup} className="was-validated">
-                        {alertUser ? (<AlertUser />) : null}
+                        {alert ? (<AlertUser err={"error"} />) : null}
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label display-6 validationTooltipUsername">Email</label>
                             <input

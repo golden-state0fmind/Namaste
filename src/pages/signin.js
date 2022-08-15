@@ -1,14 +1,16 @@
 import { useRouter } from 'next/router';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
+import { AlertUser } from '../components/utilities/AlertUser';
 
 const Signin = () => {
-    const router = useRouter()
-    const { signin } = useAuth()
+    const router = useRouter();
+    const { signin } = useAuth();
+    const [alertUser, setAlertUser] = useState(false);
     const [data, setData] = useState({
         email: '',
         password: '',
-    })
+    });
 
     const handleSignin = async (e) => {
         e.preventDefault()
@@ -17,9 +19,17 @@ const Signin = () => {
             router.push('/')
         } catch (err) {
             console.log(err)
+            setAlertUser(true)
         }
     }
     const gotoSignup = () => router.push('/signup');
+
+    useEffect(() => {
+        //effect
+        return () => {
+            //cleanup
+        };
+    }, []);
 
     return (
         <>
@@ -27,7 +37,7 @@ const Signin = () => {
                 <div className="row g-3 mx-1">
                     <h1 className="display-1">Sign in</h1>
                     <form onSubmit={handleSignin} className="was-validated">
-                        {/* {alertUser ? (<AlertUser />) : null} */}
+                        {alertUser ? (<AlertUser error={error} />) : null}
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label display-6 validationTooltipUsername">Email</label>
                             <input

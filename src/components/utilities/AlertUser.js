@@ -1,9 +1,9 @@
 import React from 'react';
 
-const AlertUser = () => {
+const AlertUser = (...props) => {
     return (
         <div className="alert alert-danger col-md-6" role="alert">
-            <h4>User already exists <br /> Please Sign in</h4>
+            <h4>ERROR: <br /> {props}</h4>
         </div>
     );
 };
