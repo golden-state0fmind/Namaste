@@ -11,5 +11,9 @@ module.exports = {
         REACT_APP_MY_APP_ID: process.env.REACT_APP_MY_APP_ID,
         REACT_APP_FOOD_KEY_ID: process.env.REACT_APP_FOOD_KEY_ID,
         REACT_APP_FOOD_KEY: process.env.REACT_APP_FOOD_KEY
-    }
+    },
+    // images: {
+    //     domains: [
+    //     ],
+    // },
 };

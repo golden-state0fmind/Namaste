@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 const axios = require('axios');
 import style from '../styles/Meals.module.css';
 
@@ -19,7 +20,8 @@ export default function MealRecipes() {
         };
     }
     const getRecipeData = () => {
-        console.log(recipe.hits[0].recipe.label, recipe.hits[0].recipe.image,'GETTING RECIPE')
+        
+        console.log(recipe.hits[0].recipe.label, recipe.hits[0].recipe.image, 'GETTING RECIPE')
     }
     useEffect(() => {
         //effect
@@ -29,29 +31,47 @@ export default function MealRecipes() {
             //cleanup
         };
     }, []);
-
-
     return (
-        <div className={style.body}>
-            <button onClick={getRecipes} >Get More Recipes</button>
-            <button onClick={getRecipeData} >Find More Recipes</button>
-            <button onClick={() => setShow(!show)} >Find More Recipes</button>
-            <div className={style.card}>
+        <div className='container-fluid d-flex flex-column'>
+            <h4 className='display-4 text-center mb-3'>
                 Welcome to the meal recipes for vegans and vegetarians
-            </div>
+            </h4>
+            <button className='button btn-lg w-50 align-self-center fs-3' onClick={() => setShow(!show)} >View Recipes</button>
             {/* will need a label, cautions, dietLabels, images, ingredientLines:[], URL, credit, */}
-            <div className={style.card}>
-                {!show
-                    ? (
-                        null
-                    )
-                    : (
-                        recipe.hits.map((element, i) => (
-                            <div key={i} style={{width:'100%', height:'100%'}}>
-                                <img src={element.recipe.image} />
+            <div className='w-100 h-100 align-self-center'>
+                <div className={`${style.card} d-flex gap-4 mt-3 h-100 w-100`}>
+                    {!show
+                        ? (
+                            <div className='h-100 w-100 d-flex flex-column justify-content-center' >
+                                <h1 className='display-5 text-center'>No Recipes in View</h1>
                             </div>
-                        ))
-                    )}
+                        )
+                        : (
+                            recipe.hits.map((element, i) => (
+                                <div key={i} className='h-100 w-100 d-flex flex-column justify-content-center' >
+                                    <div className="card" style={{ width: '18rem' }}>
+                                        <img src={element.recipe.image} className="card-img-top" alt="..." />
+                                        <div style={{ overflowX: 'scroll', height: '200px' }} className="card-body">
+                                            <h5 className="card-title">{element.recipe.label}</h5>
+                                            <p className="card-text text-danger">Allergies: {element.recipe.cautions}</p>
+                                            <ol >
+                                                {element.recipe.ingredientLines.map((ingredient, i) => (
+                                                    <li key={i} >{ingredient}</li>
+                                                ))}
+                                            </ol>
+                                            <a
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                href={element.recipe.url}>
+                                                Cooking Instructions
+                                                </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                            
+                        )}
+                </div>
             </div>
         </div>
     );
